@@ -47,7 +47,7 @@ Before you begin, ensure you have met the following requirements:
 1. Clone this repository to your local machine:
 
    ```shell
-  https://github.com/saniulhasan/vidcall.git
+    https://github.com/saniulhasan/vidcall.git
    ```
 
 2. Navigate to the project directory:
