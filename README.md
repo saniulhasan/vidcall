@@ -47,13 +47,13 @@ Before you begin, ensure you have met the following requirements:
 1. Clone this repository to your local machine:
 
    ```shell
-   git clone https://github.com/yourusername/group-video-calling-system.git
+  https://github.com/saniulhasan/vidcall.git
    ```
 
 2. Navigate to the project directory:
 
    ```shell
-   cd group-video-calling-system
+   cd vidcall
    ```
 
 3. Install the required Node.js packages:
