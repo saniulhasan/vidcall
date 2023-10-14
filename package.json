@@ -1,0 +1,24 @@
+{
+  "name": "vidcall",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "codemirror": "^6.0.1",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "moment": "^2.29.4",
+    "nodemon": "^3.0.1",
+    "sharedb": "^1.9.2",
+    "sharedb-codemirror": "^0.3.0",
+    "socket.io": "^4.7.2",
+    "uuid": "^9.0.1",
+    "webrtc-adapter": "^8.2.3"
+  }
+}

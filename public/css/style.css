@@ -1,0 +1,1012 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+* {
+  text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+/* Default Theme */
+.theme-default {
+  background-color: #f5f5f5;
+  color: #333;
+}
+/* Dark Theme */
+.theme-dark {
+  background-color: #333;
+  color: #fff;
+}
+
+
+
+/* Style for the theme switcher container */
+.theme-switcher {
+  margin: 20px;
+  text-align: center;
+}
+
+/* Style for the label */
+.theme-switcher label {
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+/* Style for the select dropdown */
+.theme-switcher select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #333;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style for the select options */
+.theme-switcher select option {
+  background-color: #fff;
+  color: #333;
+}
+
+/* Style for the theme switcher container */
+.theme-switcher select:focus {
+  outline: none;
+  border: 2px solid #4ECCA3; /* Highlight when focused */
+}
+
+.mr-1 {
+  margin-right: 10px;
+}
+
+.mr-2 {
+  margin-right: 20px;
+}
+
+.mr-3 {
+  margin-right: 30px;
+}
+
+.mr-4 {
+  margin-right: 40px;
+}
+
+.unselectable {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+navbar .logo {
+  font-size: 28px;
+  color: #393e46;
+  font-weight: bold;
+  padding: 0 12%;
+  margin-top: 32px;
+}
+
+.main {
+  display: flex;
+  padding: 0 12%;
+  margin-top: 20vh;
+  width: 100%;
+}
+.main .create-join {
+  width: 85%;
+  margin-right: 50px;
+}
+.main .create-join .text .head {
+  font-size: 36px;
+  font-weight: bold;
+  color: #619c6b;
+}
+.main .create-join .text .subtext {
+  font-size: 24px;
+  color: #6f6f6f;
+  margin-top: 10px;
+}
+.main .create-join .createroom-butt {
+  width: 75%;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color:#ff6f61; 
+  color: white;
+  text-align: center;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.main .create-join .createroom-butt:hover {
+  background-color: #ff6f61;
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.main .create-join .createroom-butt:focus {
+  outline: none;
+}
+
+/* Add a smooth transition for the button text color */
+.main .create-join .createroom-butt span {
+  transition: color 0.3s;
+}
+
+.main .create-join .createroom-butt:hover span {
+  color: #fff;
+}
+
+.main .create-join .createroom-clicked {
+  width: 75%;
+  margin-top: 60px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  border: 2px solid #4ecca3;
+  color: #4ecca3;
+}
+.main .create-join .roomcode {
+  width: 75%;
+  margin-top: 30px;
+  font-size: 18px;
+  color: #393e46;
+  text-align: center;
+  padding: 15px 0;
+  border: none;
+  border-bottom: 3px solid #232931;
+  border-top: 2px solid white;
+  font-weight: bold;
+}
+
+.main .create-join .roomcode:focus {
+  background-color: white;
+  border: 0;
+  border-bottom: 3px solid #232931;
+  border-top: 2px solid white;
+  outline: none;
+  border-radius: 0;
+}
+
+.main .create-join .roomcode-error {
+  border-bottom: 3px solid #d31c1c;
+}
+
+/* Join Room Button */
+.main .create-join .joinroom {
+  margin-top: 20px;
+  width: 75%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  color: #232931;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 10px 20px; /* Add padding */
+  border: 2px solid #61a5c2; /* Add a border with the color of your choice */
+  border-radius: 10px; /* Add border radius for rounded corners */
+  transition: color 0.3s, border-color 0.3s;
+}
+
+.main .create-join .joinroom:hover {
+  color: #61a5c2; /* Change text color on hover */
+  border-color: #4a91a9; /* Change border color on hover */
+  text-decoration: none;
+}
+.main .video-cont {
+  width: 100%;
+  text-align: center;
+}
+.main .video-cont .video-self {
+  height: 400px;
+  width: 130%;
+  background-color: #393e46;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.main .video-cont .settings {
+  margin: 0 auto;
+  display: flex;
+
+ 
+}
+.main .video-cont .settings .device {
+  background-color: #4e72cc;
+  border-radius: 20px;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  color: white;
+}
+.main .video-cont .settings .device:hover {
+  background-color: #4e72cc;
+  cursor: pointer;
+}
+.main .video-cont .settings .nodevice {
+  background-color: #b12c2c;
+  border-radius: 100px;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  color: white;
+}
+.main .video-cont .settings .nodevice:hover {
+  background-color: #393e46;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .main {
+    flex-direction: column;
+  }
+  .main .create-join {
+    width: 100%;
+    margin-right: 0;
+  }
+  .main .video-cont {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}
+/* Overlay */
+.overlay {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #1c1c1c; /* Change the background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Overlay Box */
+.overlay .box {
+  width: 40%;
+  margin: 0 auto;
+  height: 250px;
+  background-color: #ffffff;
+  margin-top: 100px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a box shadow for depth */
+}
+
+/* Head Name */
+.overlay .box .head-name {
+  padding-top: 20px;
+  text-align: center;
+  color: #4ecca3; /* Change the text color */
+  font-weight: bold;
+}
+
+/* Name Field */
+.overlay .box .name-field {
+  margin: 0px auto;
+  margin-top: 20px;
+  border: 0;
+  font-weight: bold;
+  padding: 10px;
+  width: 90%;
+  border-bottom: 3px solid #695dbb;
+  color: #3c5d8b; /* Change the text color */
+  height: 40px;
+}
+
+.overlay .box .name-field:focus {
+  outline: none;
+}
+
+/* Continue Button */
+.overlay .box .continue-name {
+  border: none;
+  margin: 0 auto;
+  margin-top: 30px;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #5248d4; /* Change the background color */
+  padding: 12px 20px;
+  border-radius: 10px;
+  transition: background-color 0.5s, opacity 0.5s; /* Add transition for background color and opacity */
+}
+
+.overlay .box .continue-name:hover {
+  background-color: #354d9a; /* Change the background color on hover */
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.overlay .box .continue-name:focus {
+  outline: 0;
+}
+
+.container-room {
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  background-color: #ecf0f1;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.container-room ::-webkit-scrollbar {
+  width: 10px;
+}
+.container-room ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.container-room ::-webkit-scrollbar-thumb {
+  background: #c5c5c5;
+}
+.container-room ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.container-room .left-cont {
+  width: 80%;
+  background-color: #393e46;
+  height: 100vh;
+  padding: 50px;
+  text-align: center;
+  position: relative;
+}
+.container-room .left-cont .whiteboard-cont {
+  height: 85vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 50px;
+  padding-bottom: 0;
+  min-height: 600px;
+}
+.container-room .left-cont .whiteboard-cont #whiteboard {
+  background-color: white;
+  border-radius: 10px;
+}
+.container-room .left-cont .whiteboard-cont .colors-cont {
+  position: absolute;
+  right: 80px;
+  top: 80px;
+  display: flex;
+  flex-direction: column;
+}
+.container-room .left-cont .whiteboard-cont .colors-cont .black {
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  background-color: black;
+  margin-top: 10px;
+}
+.container-room .left-cont .whiteboard-cont .colors-cont .black:hover {
+  cursor: pointer;
+}
+.container-room .left-cont .whiteboard-cont .colors-cont .red {
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  background-color: #e74c3c;
+  margin-top: 10px;
+}
+.container-room .left-cont .whiteboard-cont .colors-cont .red:hover {
+  cursor: pointer;
+}
+.container-room .left-cont .whiteboard-cont .colors-cont .yellow {
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  background-color: #f1c40f;
+  margin-top: 10px;
+}
+.container-room .left-cont .whiteboard-cont .colors-cont .yellow:hover {
+  cursor: pointer;
+}
+.container-room .left-cont .whiteboard-cont .colors-cont .green {
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  background-color: #badc58;
+  margin-top: 10px;
+}
+.container-room .left-cont .whiteboard-cont .colors-cont .green:hover {
+  cursor: pointer;
+}
+.container-room .left-cont .whiteboard-cont .colors-cont .orange {
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  background-color: #e67e22;
+  margin-top: 10px;
+}
+.container-room .left-cont .whiteboard-cont .colors-cont .orange:hover {
+  cursor: pointer;
+}
+.container-room .left-cont .whiteboard-cont .colors-cont .purple {
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  background-color: #9b59b6;
+  margin-top: 10px;
+}
+.container-room .left-cont .whiteboard-cont .colors-cont .purple:hover {
+  cursor: pointer;
+}
+.container-room .left-cont .whiteboard-cont .colors-cont .blue {
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  background-color: #3498db;
+  margin-top: 10px;
+}
+.container-room .left-cont .whiteboard-cont .colors-cont .blue:hover {
+  cursor: pointer;
+}
+.container-room .left-cont .whiteboard-cont .colors-cont .pink {
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  background-color: #fd79a8;
+  margin-top: 10px;
+}
+.container-room .left-cont .whiteboard-cont .colors-cont .pink:hover {
+  cursor: pointer;
+}
+.container-room .left-cont .whiteboard-cont .colors-cont .brown {
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  background-color: #834c32;
+  margin-top: 10px;
+}
+.container-room .left-cont .whiteboard-cont .colors-cont .brown:hover {
+  cursor: pointer;
+}
+.container-room .left-cont .whiteboard-cont .colors-cont .grey {
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  background-color: gray;
+  margin-top: 10px;
+}
+.container-room .left-cont .whiteboard-cont .colors-cont .grey:hover {
+  cursor: pointer;
+}
+.container-room .left-cont .whiteboard-cont .colors-cont .eraser {
+  height: 30px;
+  width: 30px;
+  font-size: 26px;
+  margin-top: 10px;
+  color: #2b2b2b;
+}
+.container-room .left-cont .whiteboard-cont .colors-cont .eraser:hover {
+  cursor: pointer;
+}
+.container-room .left-cont .whiteboard-cont .colors-cont .clearboard {
+  height: 30px;
+  width: 30px;
+  font-size: 26px;
+  margin-top: 10px;
+  color: #2b2b2b;
+}
+.container-room .left-cont .whiteboard-cont .colors-cont .clearboard:hover {
+  cursor: pointer;
+}
+.container-room .left-cont .video-cont {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  height: 75vh;
+}
+.container-room .left-cont .video-cont .video-box {
+  background-color: #353b48;
+  height: 100%;
+  min-height: 200px;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+}
+.container-room .left-cont .video-cont .video-box .video-frame {
+  background-color: #353b48;
+  height: 100%;
+  min-height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.container-room .left-cont .video-cont .video-box .nametag {
+  color: white;
+  bottom: 10px;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+.container-room .left-cont .video-cont .video-box .video-off {
+  color: white;
+  bottom: 10px;
+  position: absolute;
+  font-weight: bold;
+  top: 40%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-room .left-cont .video-cont .video-box .mute-icon {
+  color: #d63434;
+  bottom: 10px;
+  position: absolute;
+  right: 10px;
+  font-size: 20px;
+  bottom: 10px;
+}
+.container-room .left-cont .video-cont-single {
+  height: 75vh;
+}
+.container-room .left-cont .video-cont-single .video-box {
+  background-color: #353b48;
+  height: 100%;
+  min-height: 200px;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+}
+.container-room .left-cont .video-cont-single .video-box .video-frame {
+  background-color: #353b48;
+  height: 100%;
+  min-height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.container-room .left-cont .video-cont-single .video-box .nametag {
+  color: white;
+  bottom: 10px;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+.container-room .left-cont .video-cont-single .video-box .video-off {
+  color: white;
+  bottom: 10px;
+  font-weight: bold;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-room .left-cont .video-cont-single .video-box .mute-icon {
+  color: #d63434;
+  bottom: 10px;
+  position: absolute;
+  right: 10px;
+  font-size: 20px;
+  bottom: 10px;
+}
+/* Define new styles and colors for classes in the .container-room hierarchy */
+.container-room .left-cont .footer {
+  position: relative;
+}
+
+.container-room .left-cont .footer .utils {
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 50px;
+  width: 260px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.container-room .left-cont .footer .utils .audio {
+  background-color: #ff5733; /* New background color */
+  text-align: center;
+  color: #000; /* New text color */
+  padding: 10px;
+  height: 40px;
+  width: 40px;
+  border-radius: 100px;
+  transition: background-color 0.3s;
+}
+
+.container-room .left-cont .footer .utils .audio:hover {
+  cursor: pointer;
+  background-color: #b81900; /* New background color on hover */
+}
+
+.container-room .left-cont .footer .utils .novideo {
+  background-color: #33b5e5; /* New background color */
+  text-align: center;
+  margin-left: 10px;
+  color: #000; /* New text color */
+  padding: 10px;
+  height: 40px;
+  width: 40px;
+  border-radius: 100px;
+  transition: background-color 0.3s;
+}
+
+.container-room .left-cont .footer .utils .novideo:hover {
+  cursor: pointer;
+  background-color: #0099cc; /* New background color on hover */
+}
+
+.container-room .left-cont .footer .utils .screenshare {
+  background-color: #d8d8d8;
+  text-align: center;
+  margin-left: 10px;
+  color: #393e46;
+  padding: 10px;
+  height: 40px;
+  width: 40px;
+  border-radius: 100px;
+  transition: background-color 0.3s;
+  transition: color 0.3s;
+}
+
+.container-room .left-cont .footer .utils .screenshare:hover {
+  cursor: pointer;
+  color: #fff; /* New text color on hover */
+  background-color: #555; /* New background color on hover */
+}
+
+.container-room .left-cont .footer .utils .board-icon {
+  background-color: #d8d8d8;
+  text-align: center;
+  color: #393e46;
+  margin-left: 10px;
+  padding: 10px;
+  height: 40px;
+  width: 40px;
+  border-radius: 100px;
+  transition: background-color 0.3s;
+  transition: color 0.3s;
+}
+
+.container-room .left-cont .footer .utils .board-icon:hover {
+  cursor: pointer;
+  color: #fff; /* New text color on hover */
+  background-color: #555; /* New background color on hover */
+}
+
+.container-room .left-cont .footer .utils .cutcall {
+  background-color: #ff5733; /* New background color */
+  text-align: center;
+  margin-left: 10px;
+  color: #000; /* New text color */
+  padding: 10px;
+  height: 40px;
+  width: 40px;
+  border-radius: 100px;
+  transition: background-color 0.3s;
+}
+
+.container-room .left-cont .footer .utils .cutcall:hover {
+  cursor: pointer;
+  background-color: #b81900; /* New background color on hover */
+}
+
+.container-room .left-cont .footer .copycode-cont {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  display: flex;
+}
+
+.container-room .left-cont .footer .copycode-cont .roomcode {
+  color: #ff5733; /* New text color */
+  padding: 10px 20px;
+  background-color: #000; /* New background color */
+  border-bottom: 3px solid #ff5733; /* New border color */
+  font-weight: bold;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.container-room .left-cont .footer .copycode-cont .copycode-button {
+  padding: 10px 0;
+  width: 100px;
+  text-align: center;
+  color: #fff; /* New text color */
+  background-color: #ff5733; /* New background color */
+  border: none;
+  font-weight: bold;
+  outline: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.container-room .left-cont .footer .copycode-cont .copycode-button:hover {
+  cursor: pointer;
+}
+
+.container-room .left-cont .footer .copycode-cont .copycode-button:focus {
+  outline: none;
+}
+
+.container-room .right-cont {
+  width: 30%;
+  background-color: #ffffff;
+  height: 100vh;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.container-room .right-cont ::-webkit-scrollbar {
+  width: 10px;
+}
+.container-room .right-cont ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.container-room .right-cont ::-webkit-scrollbar-thumb {
+  background: #c5c5c5;
+}
+.container-room .right-cont ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.container-room .right-cont .head-title {
+  font-weight: bold;
+  color: #393e46;
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  border-bottom: 2px solid #393e46;
+}
+.container-room .right-cont .head-title .chats,
+.container-room .right-cont .head-title .attendies {
+  padding: 10px;
+  padding-top: 20px;
+  width: 100%;
+  text-align: center;
+  transition: background-color 0.5s;
+}
+.container-room .right-cont .head-title .chats:hover,
+.container-room .right-cont .head-title .attendies:hover {
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+.container-room .right-cont .chat-cont {
+  background-color: #ffffff;
+  height: 84vh;
+  padding: 10px;
+  padding-top: 10px;
+  overflow-y: scroll;
+}
+.container-room .right-cont .chat-cont .message {
+  margin-bottom: 15px;
+  margin-left: 10px;
+  background-color: #ffffff;
+  border-radius: 2px;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+.container-room .right-cont .chat-cont .message .info {
+  display: flex;
+  font-size: 0.85rem;
+}
+.container-room .right-cont .chat-cont .message .info .username {
+  font-weight: bold;
+  color: #4ecca3;
+}
+.container-room .right-cont .chat-cont .message .info .time {
+  margin-left: 12px;
+}
+.container-room .right-cont .chat-cont .message .content {
+  margin-top: 5px;
+  font-size: 0.9rem;
+}
+.container-room .right-cont .chat-input-cont {
+  padding: 12px;
+  display: flex;
+  height: 60px;
+  background-color: #ffffff;
+  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.15);
+}
+.container-room .right-cont .chat-input-cont .ci-cont {
+  width: 80%;
+}
+.container-room .right-cont .chat-input-cont .ci-send {
+  width: 20%;
+  margin-left: 20px;
+}
+.container-room .right-cont .chat-input-cont .chat-input {
+  width: 100%;
+  height: 36px;
+  font-size: 0.85rem;
+  padding: 4px 10px;
+  border: none;
+  border-bottom: 3px solid #4ecca3;
+  color: #393e46;
+}
+.container-room .right-cont .chat-input-cont .chat-input:focus {
+  outline: none;
+}
+.container-room .right-cont .chat-input-cont .chat-send {
+  height: 36px;
+  padding: 5px 20px;
+  border: none;
+  background-color: white;
+  color: #4ecca3;
+  font-weight: bold;
+  font-size: 0.85rem;
+  border-radius: 2px;
+  transition: background-color 0.5s;
+}
+.container-room .right-cont .chat-input-cont .chat-send:hover {
+  color: #2980b9;
+  cursor: pointer;
+  background-color: #f3f3f3;
+}
+.container-room .right-cont .chat-input-cont .chat-send:focus {
+  outline: none;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #0f0f0f;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  font-size: 14px;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #0f0f0f transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 0.8;
+}
+
+
+.attendance {
+  background-color: #f0f0f0; /* Background color for the attendance area */
+  border: 2px solid #d1d1d1; /* Border around the attendance area */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners for the attendance area */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+  margin-top: 20px; /* Adjust the margin as needed */
+}
+
+.user-count {
+  font-size: 18px;
+  color: #333; /* Text color for the user count */
+  margin-bottom: 10px; /* Spacing between user count and user list */
+}
+
+.user-list {
+  list-style-type: none; /* Remove default list styles */
+  padding: 0;
+}
+
+#user-list {
+  padding: 0;
+  margin: 0;
+}
+
+/* Style for individual user list items */
+#user-list li {
+  font-size: 16px;
+  color: #666; /* Text color for user list items */
+  padding: 5px 0;
+}
+
+/* Optional: Add some hover effects for the user list items */
+#user-list li:hover {
+  background-color: #e0e0e0; /* Background color on hover */
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
+
+.attendance {
+  border: 1px solid #ccc;
+  padding: 10px;
+  max-width: 300px; /* Adjust the width as per your requirement */
+  margin: 0 auto;
+}
+
+.user-count {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.user-list {
+  max-height: 200px; /* Adjust the height as per your requirement */
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+li {
+  margin: 5px 0;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: relative;
+}
+
+
+/* CSS */
+#whiteboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#tools-container {
+  margin: 10px;
+}
+
+#text-input {
+  padding: 5px;
+  margin-right: 5px;
+}
+
+#add-text-button {
+  padding: 5px 10px;
+  background-color: #4ECCA3;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+#canvas-container {
+  border: 1px solid #ddd;
+}
